@@ -1,85 +1,89 @@
 # Kennismaking SVG en Vue
 
 ## 1. Klaarzetten Vue-project
-De details voor het opzetten van een Vue-project (en de nodige installaties) zien jullie in het vak Web-Expert, wij beperken ons hier tot de basis. Je vind ook meer informatie over het gebruik van Vue in VC code hierzo: https://code.visualstudio.com/docs/nodejs/vuejs-tutorial. Als je op zoek bent naar wat algemene informatie over Vue, dan raden we deze aan: https://vuejs.org/guide/introduction.html. Gebruik het 'create' commando om een nieuw project aan te maken. Dat project krijgt zijn eigen mapje. We raden aan om dit commando uit te voeren in een folder die je speciaal aanmaakt voor dit vak.
+De details voor het opzetten van een Vue-project (en de nodige installaties) zien jullie in het vak Web-Expert, wij beperken ons hier tot de basis om je op gang te krijgen. We volgen hier deze gids: https://vuejs.org/guide/quick-start.html. Lees aandachtig! Sla niets over! Alle stappen staan uitgelegd, maar het is gemakkelijk om een stap te missen. Ik werk in Visual Studio Code, maar je mag een IDE naar keuze gebruiken. Meer informatie over het gebruik van Vue in VS code vind je hier: https://code.visualstudio.com/docs/nodejs/vuejs-tutorial.
 
-    vue create first-svg
+Vooreerst moet je node.js geinstalleerd hebben op je machine. Normaal gezien heb je dat al gedaan in andere vakken, maar je kan node hier installeren: https://nodejs.org/en. Je kan dat controleren door in een terminal het volgende commando in te geven:
 
-Je kiest voor Vue 3. Vergeet daarna ook niet te navigeren naar de folder die aangemaakt is zodat je in je project zit:
+    node --version
+
+ Gebruik het 'create' commando om een nieuw project aan te maken. Dat project krijgt zijn eigen mapje. We raden aan om dit commando uit te voeren in een folder die je speciaal aanmaakt voor dit vak. Voer het volgende commando uit:
+
+    npm create vue@latest
+
+Het zou kunnen dat je de vraag krijgt om een package te installeren (bijvoorbeeld creatue-vue@3.8.0). Druk op `y` om te aanvaarden.
+Vervolgens moet je een projectnaam kiezen. Ik koos voor `first-svg`. Op alle opties die volgen mag je `no` selecteren.
+
+De output vertelt ons exact wat onze volgende 3 commando's moeten zijn, dus vergeet niet die output te lezen. Het commando heeft namelijk een folder aangemaakt met daarin ons project. De naam van die folder is ook de naam van ons project (first-svg). Navigeren via de terminal doen we met `cd` (kort voor "change directory", zoals je hoort te weten), dus we navigeren naar onze projectfolder:
 
     cd first-svg  
 
-Controleer eerst of je project werkt door vue te runnen. Dat kan je met het volgende commando:
+Als je een leeg Vue project maakt, dan worden alle pakketten die het project nodig heeft gedocumenteerd in een manifest, maar nog niet automatisch gedownload. Dat is om de projectfolder klein te houden. Typisch, als je je werkt deelt (of instuurt voor een examen), stuur je je oplossing door zonder al die pakketten. Vue houdt zijn pakketten bij in de folder `node_modules`. Je kan die map ten allen tijden verwijderen, en dat doe je ook best voor je je werk doorstuurt. Om ons project te laten werken moeten we dus eerst het commando uitvoeren dat kijkt naar het manifest en alle pakketten ook effectief download. Dat doen we met het volgende commando:
 
-    npm run serve
+    npm install
+
+Dit commando zou je dus altijd moeten uitvoeren de eerste keer als je ergens een vue project krijgt, of download. Als de map `node_modules` verwijderd is, dan zal dit commmando de map opnieuw aanmaken. Dit kan overigens ook even duren. Tijd om ons project even te testen. We kunnen ons project opstarten met het volgende commando:
+
+    npm run dev
 
 De uitvoer ziet er dan bijvoorbeeld zo uit:
 
-    DONE  Compiled successfully in 84ms                                                                                                                                                                                                                                                                                                                1:16:58 PM
+      VITE v4.5.0  ready in 405 ms
 
-    App running at:
-    - Local:   http://localhost:8080/
-    - Network: http://192.168.1.121:8080/
+    ➜  Local:   http://localhost:5173/
+    ➜  Network: use --host to expose
+    ➜  press h to show help
 
-Daar vind je het adres waar je website op draait. In dit voorbeeld is dat `http://localhost:8080/`. Open een web browser en surf naar dat adres om je website te zien. Nadat je je harde werk bewonderd heb, keer je terug naar terminal in VC code en gebruik je CTRL+C om de uitvoer stil te leggen. Bevestig met 'Y'.
+
+Daar vind je het adres waar je website op draait. In dit voorbeeld is dat `http://localhost:5173/`. Open een web browser en surf naar dat adres om je website te zien. Nadat je je harde werk bewonderd heb, keer je terug naar terminal in VS code en gebruik je CTRL+C om de uitvoer stil te leggen. Bevestig met 'Y'.
+
+Oef! Pak wat te drinken, geef jezelf een schouderklopje. Goed werk.
 
 ### Verkenning van het project
-Opnieuw laten we de basis van Vue over aan Web-Expert, maar hier is een snel overzicht van het project. We beginnen bij wat de gebruiker ziet en werken zo terug.
+Opnieuw laten we de basis van Vue over aan andere vakken, maar hier is een snel overzicht van het project. We beginnen bij wat de gebruiker ziet en werken zo terug.
 
-- Onder de map public vind je index.html. Dat is de webpagina die we zien als we het project laten runnen. Daar zie je dat de body van de html enkel bestaat uit een div met de id 'app'. Waar komt die app vandaan?
-- Onder de map src vind je App.vue, dat lijkt een goed startpunt. Bovenaan die file zie je de Vue-declaratie van het 'app' element (tussen `<template>` tags). Het app-element bestaat uit een afbeelding van het Vue-logo en een element genaamd `HelloWorld`. 
-- In Vue kunnen we eigen HTML-component definiëren. We noemen dat Vue componenten. In het bestand HelloWorld.vue kan je bekijken hoe het HelloWorld element er uitziet. We kunnen dus met andere woorden zelf nieuwe HTML elementen/snippets definiëren en die dan hergebruiken. 
+- Onder projectmap vindt je index.html. Dat is de webpagina die we zien als we het project laten runnen. Daar zie je dat de body van de html enkel bestaat uit een div met de id `app`. Waar komt die `app` vandaan?
+- Onder de map src vind je App.vue, dat lijkt een goed startpunt. Bovenaan die file zie je een hoopje html tussen `<template>` tags. Dit is de html die geinjecteerd wordt in onze index.html op de plaats waar ons `app` divje staat. We zien dat onze website bestaat uit een afbeelding van het Vue-logo en een element genaamd `TheWelcome`. 
+- In Vue kunnen we eigen HTML-component definiëren. We noemen dat Vue componenten. In het bestand TheWelcome.vue kan je bekijken hoe het TheWelcome element er uitziet. We kunnen dus met andere woorden zelf nieuwe HTML elementen/snippets uitvinden, definiëren en die dan hergebruiken. 
 
 ### Snoeien
-Het HelloWorld componentje hebben we niet nodig. Pas de App component aan zodat de html er als volgt uitziet:
+Het TheWelcome componentje hebben we niet nodig. Pas de App component aan zodat de html er als volgt uitziet:
 
     <template>
-    <div id="app">
-        <img alt="Vue logo" src="./assets/logo.png">
-    </div>
-    </template>
-
-Verwijder ook gerust het HelloWorld.vue bestandje uit je project (laat de map components nog even staan). Als je nu opnieuw het project probeert te runnen krijg je de volgende foutboodschap:
-
-    Failed to compile with 1 error                                                                                                                                                                                                                                                                                                             12:59:41 PM
-    This relative module was not found:
-
-    * ./components/HelloWorld.vue in ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=script&lang=js&
-
-Dat komt omdat de App-component nog een verwijzing heeft naar een component genaamd HelloWorld, maar die hebben we net verwijderd. De verwijzing vind je in App.vue:
-
-    <script>
-    import HelloWorld from './components/HelloWorld.vue'
-
-    export default {
-    name: 'App',
-    components: {
-        HelloWorld
-    }
-    }
-    </script>
-
-Daar zie je dat de App component het HelloWorld componentje wilt importeren (1e regel). We zien ook dat de component nog eens extra gedeclareerd wordt onder de lijst `components`. We verwijderen deze referenties. Je blijft dan over met het volgende:
-
-    <script>
-    export default {
-    name: 'App',
-    components: {
+    <header>
         
-    }
-    }
-    </script>
+    </header>
 
-Als je nu je project opnieuw opstart krijg je enkel nog het Vue logo te zien. Dat was voorlopig genoeg Vue. We kunnen nu de html van de webpagina aanpassen door het App-componentje aan te passen. We hebben dus in feite nog niets gewonnen met Vue, maar het nut van Vue zal wel snel duidelijk worden als we data gaan inlezen voor onze visualizaties. Probeer nu zelf de html aan te passen van de App-component:
-
-    <template>
-    <div id="app">
-        <h1>DataViz</h1>
-        <p>Ik vind Vue wel leuk, maar niet zo leuk als Blender.</p>
-    </div>
+    <main>
+    </main>
     </template>
 
-Als je het Vue project niet afgesloten had met CTRL+C dan zal de verandering ook live doorgevoerd worden op de website als je het bestandje opslaat. Dat noemen ze ook wel hot-reload of dynamic reloading. Je website zou er nu zo moeten uitzien:
+Er schiet nu niet veel meer over. Verwijder ook gerust de HelloWorld.vue, TheWelcome.vue en TheWelcomeItem bestandjes uit je project (laat de map components nog even staan). Als je nu opnieuw het project probeert te runnen met `npm run dev` krijg je de volgende foutboodschap:
+
+    [vite] Internal server error: Failed to resolve import "./components/HelloWorld.vue" from "src\App.vue". Does the file exist?
+    
+Dat komt omdat de App-component nog een verwijzing heeft naar een component genaamd HelloWorld, maar die hebben we net verwijderd. De verwijzing vindt je in App.vue:
+
+    <script setup>
+    import HelloWorld from './components/HelloWorld.vue'
+    import TheWelcome from './components/TheWelcome.vue'
+    </script>
+
+Daar zie je dat de App component het HelloWorld componentje wilt importeren (en TheWelcome ook). We verwijderen deze referenties. Je blijft dan over met het volgende:
+
+    <script setup>
+    </script>
+
+Als je nu je project opnieuw opstart krijg je enkel nog een witte pagina te zien. Dat was voorlopig genoeg Vue. We kunnen nu de html van de webpagina aanpassen door het App-componentje aan te passen. We hebben dus in feite nog niets gewonnen met Vue, maar het nut van Vue zal wel snel duidelijk worden als we data gaan inlezen voor onze visualizaties. Probeer nu zelf de html aan te passen:
+
+    <template>
+    <main>
+    <h1>DataViz</h1>
+      <p>Ik vind Vue wel leuk, maar niet zo leuk als Blender.</p>
+    </main>
+    </template>
+
+Als je het Vue project niet afgesloten had met CTRL+C dan zal de verandering ook live doorgevoerd worden op de website als je het bestandje opslaat. Dat noemen ze ook wel hot-reload of dynamic reloading. Je website zou er nu ruwweg zo moeten uitzien (de screenshot is wat ouder):
 
 ![Hello Vue!](First-Vue.PNG)
 
@@ -87,7 +91,7 @@ Als je het Vue project niet afgesloten had met CTRL+C dan zal de verandering ook
 We kennen ondertussen het concept van Scalable Vector Graphics (SVG) van Illustrator. We weten dat die niet opgebouwd zijn uit statische pixels maar dat het eigenlijk berekeningen zijn op basis van primitieve vormen zoals rechthoeken, cirkels, etc. HTML 5 ondersteunt zelf ook het gebruik van SVG elementen. Je hebt dus in principe voor dit onderdeel geen Vue nodig, SVG elementen zitten standaard ingebakken in HTML. Als je bovenstaande niet gedaan hebt kan je hier meevolgen door zelf even een index.html bestandje aan te maken en rechtstreeks te werken in de body.
 
 ### Hello Circle
-We starten met een cirkel, want cirkels zijn hip. Vooraleer we een cirkel kunnen tekenen moeten we echter beginnen met aan HTML te laten weten dat we SVG elementen willen toevoegen. dat doen we door een SVG tag toe te voegen aan de body. Daaraan moeten we ook meteen een breedte en hoogte meegeven:
+We starten met een cirkel, want cirkels zijn hip. Vooraleer we een cirkel kunnen tekenen moeten we echter beginnen met aan HTML te laten weten dat we SVG elementen willen toevoegen door een SVG canvas toe te voegen. Dat doen we door een SVG tag toe te voegen aan de body. Daaraan moeten we ook meteen een breedte en hoogte meegeven:
 
     <svg width=700 height=350>
     </svg>
@@ -95,13 +99,13 @@ We starten met een cirkel, want cirkels zijn hip. Vooraleer we een cirkel kunnen
 Als je zonder Vue werkt kan je deze tags rechtstreeks in de body zetten. Als je meegevolgd hebt met Vue, dan zijn we nog steeds onze aanpassingen aan het maken in de App-component:
 
     <template>
-    <div id="app">
+    <main>
         <h1>DataViz</h1>
         <p>Ik vind Vue wel leuk, maar niet zo leuk als Blender.</p>
 
         <svg width=700 height=350>
         </svg>
-    </div>
+    </main>
     </template>
 
 Nu dan: Cirkel. Dat is eigenlijk heel simpel, je gebruikt een cirkel element binnen je svg groep:
@@ -143,10 +147,10 @@ Breid nu zelf de bovenstaande code uit zodat je meer cirkels op je scherm krijgt
 </svg>
 
 
-De bovenstaande code maakt gebruik van de `fill` eigenschap om de kleur van de cirkel te wijzigen.
+Merk op: de bovenstaande code maakt gebruik van de `fill` eigenschap om de kleur van de cirkel te wijzigen.
 
 ### Het element `g`
-Een veelgebruikt element voor SVG graphics in HTML 5 is het`g` element, oftwel group element. Op zicht doet dat element niet veel, vergelijkbaar met het `div` element. We kunnen het gebruiken om SVG elementen te groeperen:
+Een veelgebruikt element voor SVG graphics in HTML 5 is het `g` element, oftewel het group element. Op zich doet dat element niet veel, vergelijkbaar met het `div` element. We kunnen het gebruiken om SVG elementen te groeperen:
 
     <svg width=700 height=350>
         <g>
@@ -164,12 +168,12 @@ Deze toevoeging zal niets veranderen aan je website. Maar nu kunnen we attribute
         </g>
     </svg>
     
-Denk eraan dat ons 'canvas' maar 700 pixels breed is. Als je daar buitentreed zal je cirkel niet, of maar gedeeltelijk, zichtbaar zijn.
+Denk eraan dat ons 'canvas' maar 700 pixels breed is. Als je daar buitentreedt zal je cirkel niet, of maar gedeeltelijk, zichtbaar zijn.
 
 ### Nog meer cirkels!
-Uiteindelijk gaan we dit soort SVG elementen tekenen op basis van data die we inlezen. Als we exact weten hoeveel datapunten we moeten visualiseren kunnen we de cirkels dus zo handmatig toevoegen, maar dat is geen robuuste oplossing. Bovendien weten we op voorhand niet hoeveel datapunten er zullen zijn ofwel zijn die variabel. Het is dus nuttig om een arbitraire hoeveelheid cirkels te kunnen tekenen. Soms hebben we bijvoorbeeld 25 cirkels nodig, eentje voor elke student in de klas, of soms hebben we er misschien 200 nodig, eentje voor elke student in de richting.
+Uiteindelijk gaan we dit soort SVG elementen tekenen op basis van data die we inlezen. Als we exact weten hoeveel datapunten we moeten visualiseren kunnen we de cirkels dus zo handmatig toevoegen, maar dat is geen robuuste oplossing. Bovendien weten we op voorhand niet hoeveel datapunten er zullen zijn, ofwel zijn die variabel. Het is dus nuttig om een arbitraire hoeveelheid cirkels te kunnen tekenen. Soms hebben we bijvoorbeeld 25 cirkels nodig, eentje voor elke student in de klas, of soms hebben we er misschien 200 nodig, eentje voor elke student in de richting.
 
-Daarvoor kunnen we gebruik maken van de Vue for-lus. Met de vue for-lus willen we typisch loopen over een array van data, maar die hebben we nu nog niet. Gelukkig kunnen we ook een Vue for-lus gebruiken voor een reeks getallen. Dat ziet er dan bijvoorbeeld zo uit:
+Daarvoor kunnen we gebruik maken van de Vue for-lus. Met de vue for-lus willen we typisch loopen over een array van data, maar die hebben we nu nog niet. Gelukkig kunnen we ook een Vue for-lus gebruiken voor een reeks getallen. Dat ziet er dan bijvoorbeeld zo uit (je moet dit niet invullen, volg gewoon even mee):
 
     <span v-for="n in 10">{{ n }}</span>
 
@@ -183,7 +187,7 @@ Deze code zal Vue vertalen in HTML. Deze regel wordt dankzij de `v-for` 10 keer 
 
 Alles wat binnen `{{` staat wordt door Vue gezien als code, dus niet als HTML. Voor meer informatie, zie: https://vuejs.org/guide/essentials/list.html.
 
-De bovenstaande gele cirkels worden op dit moment als volgt getekend:
+We tekenen opnieuw de gele cirkels. Vul in op je svg canvas::
 
     <circle cx=50 cy=50 fill=orange r=20 />
     <circle cx=150 cy=50 fill=orange r=5 />
@@ -199,7 +203,7 @@ Voor het gemak van deze oefening zetten we eerst de straal van elk van deze cirk
     <circle cx=350 cy=50 fill=orange r=15 />
     <circle cx=450 cy=50 fill=orange r=15 />
 
-`cy` is altijd 50. `r` is altijd 15. `fill` is altijd `orange`. Maar `cx` verschilt per cirkel. We zouden die `cx` kunnen herschrijven als
+`cy` is altijd 50. `r` is altijd 15. `fill` is altijd `orange`. Maar `cx` verschilt per cirkel. `cx` is 50, 150, 250, 350, ... We zouden de n'de `cx` kunnen herschrijven als
 
     50 + (n-1) * 100
 
@@ -217,10 +221,11 @@ Dat kunnen we vertalen naar een `v-for`! Maak ook gebruik van een `g` element vo
 
     <svg width=700 height=350>
       <g v-for="n in 5">
-        <circle :cx="n*100" cy=50 r=15 fill="orange" />
+        <circle v-bind:cx="n*100" cy=50 r=15 fill="orange" />
       </g>
     </svg>
 
+Waarom staat er een `v-bind` voor die `cx`? Die laat aan Vue weten dat de `cx` niet zomaar een waarde bevat, maar wel een berekende waarde: een formule. Dit is een signaal aan Vue dat dit HTML is die nog eerst onderhanden moet genomen worden en als code moet worden uitgevoerd. Je kan `v-bind:cs` ook afkorten naar `:cx`.
 Het zou kunnen dat je de volgende fout tegenkomt: 
 
     Elements in iteration expect to have 'v-bind:key'
@@ -229,7 +234,7 @@ De uitleg voor deze fout is erg technisch maar het komt erop neer dat vue een un
 
     <svg width=700 height=350>
       <g v-for="n in 5" :key="n">
-        <circle :cx="n*100" cy=50 r=15 fill="orange" />
+        <circle v-bind:cx="n*100" cy=50 r=15 fill="orange" />
       </g>
     </svg>
 
@@ -239,7 +244,7 @@ Als je moeite hebt met for-lussen, raad ik je altijd aan om die zelf eens uit te
 
 ## 3. Smiley
 
-Tijd om eens een smiley-face zonder glimlach te maken. We maken een SVG canvas van 960x500. Vervolgens tekenen we een cirkel op (480, 250), in het midden dus. We maken weliswaar gebruik een groep om de cirkel op die plaats te zetten, niet van de eigenschappen `cx` en `cy`. Ten slotte maken we de cirkel geel. Als straal pakken we 245 zodat we wat marge hebben. Voorlopig ziet er dat dan uit als volgt:
+Tijd om eens een smiley-face zonder glimlach te maken. We maken een SVG canvas van 960x500. Vervolgens tekenen we een cirkel op (480, 250), in het midden dus. We maken weliswaar gebruik van een groep om de cirkel op die plaats te zetten, dus niet van de eigenschappen `cx` en `cy`, maar wel de `transform` eigenschap van een groep. Ten slotte maken we de cirkel geel. Als straal pakken we 245 zodat we wat marge hebben. Voorlopig ziet er dat dan uit als volgt:
 
     <svg width=960 height=500>
         <g transform="translate(480, 250)">
@@ -293,7 +298,7 @@ Voordat je verder leest, probeer nu eerst eens zelf om oogjes toe te voegen. Bli
 
 Let op, bovenstaande smiley is html die rechtstreeks in dit document staat en dus op een veel kleinere afmeting is gemaakt, het is dus mogelijk dat het voorbeeld hier niet exact overeenkomt met jouw oplossing.
 
-Probeer nu eens de smiley 3x te herhalen:
+Probeer nu eens de smiley 3x te herhalen, eerst zonder `v-for` lus:
 
 <svg width=300 height=100>
     <g transform="translate(50, 50)">
@@ -326,7 +331,7 @@ Helaas is het niet voldoende om dit te doen:
 
 Als `n` onze lusvariabele is. (De `v-bind:` is nodig om vue te laten weten dat we in dit attribuut code hebben gestoken. Je kan die, zoals in het vorige voorbeeld ook afkorten tot `:`).
 
-De waarde van transform is namelijk een string: `'translate(50, 50)'`. Als we daar rechtstreeks n inzetten wordt die geinterpreteerd als tekst. We gaan daarom de tekst opdelen. In javascript kan je tekst 'optellen' om die aan elkaar te hangen. Dus `'translate(150, 50)'` is hetzelfde als `'translate(' + '150, 50)'` of `'translate(' + 480 + ', ' + 250 + ')'`. Om de interpretatie als tekst te mijden schrijven we dus: `'translate(' + (50 + n * 100) + ', 50')'`. Je kan ook gebruik maken van javascript template literals voor kortere notate (zie: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals). Dat ziet er dan zo uit:
+De waarde van transform is namelijk een string (=tekst): `'translate(50, 50)'`. Als we daar rechtstreeks n inzetten wordt die geinterpreteerd als tekst. We gaan daarom de tekst opdelen. In javascript kan je tekst 'optellen' om die aan elkaar te hangen. Dus `'translate(150, 50)'` is hetzelfde als `'translate(' + '150, 50)'` of `'translate(' + 150 + ', ' + 50 + ')'`. Om de interpretatie als tekst te mijden schrijven we dus: `'translate(' + (50 + n * 100) + ', 50')'`. Je kan ook gebruik maken van javascript template literals voor kortere notate (zie: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals). Dat ziet er dan zo uit:
 
     <g :transform="`translate(${50 + n *100}, 50)`">
 
@@ -343,7 +348,7 @@ Wat is nu de smiley in dit geval? Dat is het `g` element, en de x- en y-coördin
       </g>
     </svg>
 
-En wat als ik nu een kleine smiley will, een middelgrote en een grote? Probeer zelf eens te spelen met de waardes om dat voor elkaar te krijgen.
+En wat als ik nu een kleine smiley wil, een middelgrote en een grote? Probeer zelf eens te spelen met de waardes om dat voor elkaar te krijgen.
 
 <svg width=300 height=100>
     <g transform="translate(50, 50)">
@@ -366,7 +371,7 @@ En wat als ik nu een kleine smiley will, een middelgrote en een grote? Probeer z
     </g>
 </svg>
 
-Waarom zijn we dit aan het doen? Omdat we graag SVG elementen willen aanpassen op basis van data die we inlezen. Denk bijvoorbeeld aan een bar-chart waarbij we rechthoeken hoger of korter maken op basis van data. In datavisualisatie werken we dus vaak met dezelfde SVG elemenen die we willen aanpassen met kleine waardes. We hebben gelukkig een framework dat ons daarbij kan helpen: Vue.
+Waarom zijn we dit aan het doen? Omdat we graag SVG elementen willen aanpassen op basis van data die we inlezen. Denk bijvoorbeeld aan een bar-chart waarbij we rechthoeken hoger of korter maken op basis van data. In datavisualisatie werken we dus vaak met dezelfde SVG elemenen die we willen aanpassen met kleine waardes. We hebben gelukkig een framework dat ons daarbij kan helpen. Welkom terug, Vue!
 
 ## 4. Vue Componenten
 Met Vue kunnen we eigen html-componenten definiëren. Dat betekent dat we eigenlijk willen dat onze html er ruwweg als volgt uiziet:
@@ -409,97 +414,66 @@ Er zijn er nog meer dan dat en we hebben ze niet allemaal nodig. Onder template 
         </g>
     </template>
 
-Daaronder zetten we nog het volgende:
+`script` gaan we zo dadelijk nodig hebben, maar voorlopig kunnen we dat nog leeg laten:
 
-    <script>
-    export default {
-    name: 'Face',
-    components: {
-        
-    }
-    }
+    <script setup>
     </script>
 
-Wat doet dit nu eigenlijk? De `script` tags herken je wellicht van javascript en dit is de eigenlijke Vue-code die de html tussen de `template` tags staat blootstelt aan de rest van het project en hangt daar een naampje aan: `Face`.
 
-Het laatste onderdeel, `style` laten we voorlopig nog even met rust.
+Het laatste onderdeel, `style`, is voor css en hebben we hier niet nodig.
 
 Alles wat we nu gedaan hebben heeft geen enkele invloed op onze webpagina. Dat komt omdat alle html code voor onze pagina nog steeds in `App.vue` staat. Tijd om onze gloednieuwe `Face` component te gebruiken. 
 
 Toen we ons project voor het eerst opstartten gebruikte `App.vue` al een andere component: `HelloWorld.vue`. Dat zag er toen zo uit:
 
-    <script>
+    <script setup>
     import HelloWorld from './components/HelloWorld.vue'
-
-    export default {
-    name: 'App',
-    components: {
-        HelloWorld
-    }
-    }
+    import TheWelcome from './components/TheWelcome.vue'
     </script>
 
-We zien dat er dus 2 zaken nodig zijn om de `Face` component te kunnen gebruiken. Het eerste is een `import` statement, het andere is het het gebruik van de component declareren in de `components` lijst. We passen dus `App.vue` aan:
+We zien dat er dus 2 zaken nodig zijn om de `Face` component te kunnen gebruiken. Het eerste is een `import` statement, het andere is de component ook effectief gebruiken in onze html. We passen dus `App.vue` aan:
 
-    <script>
+    <script setup>
     import Face from './components/Face.vue'
-    export default {
-
-    name: 'App',
-    components: {
-        Face
-    }
-    }
     </script>
 
-Dat zijn al veel aanpassingen zonder te testen... Maar als je nu probeert te runnen krijg je de volgende errorr:
+Nu moeten we onze component nog gebruiken. We veranderen de inhoud van ons svg canvas:
 
-    The "Face" component has been registered but not used  vue/no-unused-components
+    ...
+    <svg width=960 height=500>
+        <Face />  
+    </svg>
+    ..
 
-Vue vindt het niet zo leuk als je componenten declareert maar dan uiteindelijk niet gebruikt. Dat is overigens een instelling die je kan wijzigen, maar dit ligt buiten de scope van dit vak.
-Laat ons dus nog 1 kleine aanpassing maken zodat we de impact kunnen zien, en het is de beste aanpassing: we gaan de html in App.vue aanpassen zodat daar ons nieuwe Face element gebruikt wordt:
-
-    <template>
-    <div id="app">
-        <svg width=960 height=500>
-            <Face />  
-        </svg>
-    </div>
-    </template>
-
-Run opnieuw je project en je zal zien dat je nog steeds een smiley hebt. Misschien is dat niet zo spannend voor de doorsnee gebruiker, maar wij weten beter. De html maakt nu gebruik van een html element dat we zelf gedefinieerd hebben!
+Run opnieuw je project en je zal zien dat je nog steeds een smiley hebt. Misschien is dat niet zo spannend voor de doorsnee gebruiker, maar wij weten beter! De html maakt nu gebruik van een html element dat we zelf uitgevonden en gedefinieerd hebben!
 
 ## 5. Componenten & Data
 
-We zijn al een stap verder! We hebben nu een eigen html element. Helaas kunnen we nog niet veel met dit element. De volgende code zal bijvoorbeeld drie gezichtjes tekenen, maar telkens op dezelfde plaats waardoor we maar 1 gezichtje zien:
+We zijn al een stap verder! We hebben nu een eigen html element. Helaas kunnen we nog niet veel met dit element. De volgende HTML zal bijvoorbeeld drie gezichtjes tekenen, maar telkens op dezelfde plaats waardoor we maar 1 gezichtje zien:
 
-    <template>
-    <div id="app">
-        <svg width=960 height=500>
-            <Face />  
-            <Face />  
-            <Face />  
-        </svg>
-    </div>
-    </template>
+    <svg width=960 height=500>
+        <Face />  
+        <Face />  
+        <Face />  
+    </svg>
 
 ### Coordinaten
-Aan een cirkel element konden we data doorgeven zoals `cx` en `fill`. Waarom zouden we dat ook niet kunnen voor ons eigen elementje? We zouden dus graag data doorgeven aan ons html element: de x-coordinaat van het gezicht. Het eerste wat we moeten doen is de code van onze Face component uitbreiden zodat die ook `props`, oftewel properties, blootstelt:
+Aan een cirkelelement konden we data doorgeven zoals `cx` en `fill`. Waarom zouden we dat ook niet kunnen voor ons eigen elementje? We zouden dus graag data doorgeven aan ons html element: de x-coordinaat van het gezicht. Het eerste wat we moeten doen is de code van onze Face component uitbreiden zodat die ook `props`, oftewel properties, blootstelt. Dat doen we in onze Face.vue onder onze script tags:
 
-    <script>
-    export default {
-    name: 'Face',
-    props: {
-        'x': Number,
-        'y': Number
+    <script setup>
+    defineProps({
+    x: {
+        type: Number,
+        required: true
     },
-    components: {
-        
+    y: {
+        type: Number,
+        required: true
     }
-    }
+    })
     </script>
 
-Dit zorgt ervoor dat ons html element 2 eigenschappen heeft (van het type Number, of getal) waar we een getal aan kunnen toewijzen. We kunnen daar waarde aan toewijzen op dezelfde manier als andere html eigenschappen. We passen dus `App.vue` aan als volgt:
+Dit zorgt ervoor dat ons html element 2 eigenschappen heeft: `x` en `y` (van het type Number, of getal) waar we een getal aan kunnen toewijzen. We hebben tegen Vue ook gezegd dat die vereist zijn (required). We kunnen daar waarden aan toewijzen op dezelfde manier als andere html eigenschappen. We passen dus `App.vue` aan als volgt:
 
     <template>
     <div id="app">
@@ -509,7 +483,7 @@ Dit zorgt ervoor dat ons html element 2 eigenschappen heeft (van het type Number
     </div>
     </template>
 
-We zijn hier iets vergeten. Vue heeft wat hulp nodig en moet weten welke eigenschappen doorgegeven moeten worden aan componenten. We moeten daarvoor een Vue directive toevoegen, dat is dus wat extra boekhouding. Gelukkig is dat heel simpel om te doen: we marken de eigenschappen met `v-bind:`.
+We zijn hier iets vergeten. Vue heeft wat hulp nodig en moet weten welke eigenschappen doorgegeven moeten worden aan componenten. We moeten daarvoor een Vue directive toevoegen, dat is dus wat extra boekhouding. Gelukkig is dat heel simpel om te doen: we marken de eigenschappen met onze oude bekende: `v-bind:`.
 
     <template>
     <div id="app">
@@ -521,7 +495,7 @@ We zijn hier iets vergeten. Vue heeft wat hulp nodig en moet weten welke eigensc
 
 Helaas werkt dit niet. Weet je ook waarom?
 
-De html van ons `Face` componentje is nog altijd dezelfde. We maken nergens gebruik van de `x` en `y` eigenschappen die we hebben gedeclareerd. Met andere woorden: we hebben nu wel een `x` en `y` gegeven aan onze component, maar we hebben nog niet duidelijk gemaakt hier die eigenschappen de html van `Face` zullen beinvloeden. Laat ons dat even aanpassen. De x- en y-coordinaat staat op dit moment binnen onze transform eigenschap:
+De html van ons `Face` componentje is nog altijd dezelfde. We maken nergens gebruik van de `x` en `y` eigenschappen die we hebben gedeclareerd. Met andere woorden: we hebben nu wel een `x` en `y` gegeven aan onze component, maar we hebben nog niet duidelijk gemaakt hoe die eigenschappen de html van `Face` zullen beinvloeden. Laat ons dat even aanpassen. De x- en y-coordinaat staat op dit moment binnen onze transform eigenschap:
 
     <g transform="translate(150, 50)">
 
@@ -540,28 +514,43 @@ Weet je nog waarom? Probeer weer eerst even zelf. De oplossing staat hieronder:
         </g>
     </template>
 
-Vergeet niet de `:` of `v-bind:` voor de transform.
+Vergeet niet de `:` of `v-bind:` voor de transform. Samengevat: elke keer als Vue ziet dat er een `Face` html element wordt gebruikt, zal Vue daar de html copy-pasten die tussen de `template` tags staat in Face.vue. Vue weet ook dat Face 2 attributen heeft: `x` en `y`. Als er in die geplakte html ergens de `x` of `y` voorkomt, zal die vervangen worden door wat er bij het `Face` elementje is meegegeven.
 
 ### Andere properties
 
 Tijd om een versnelling hoger te schakelen. We gaan nog extra properties toevoegen aan Face:
 
-    <script>
-    export default {
-    name: 'Face',
-    props: {
-        'x': Number,
-        'y': Number,
-        'r': Number,
-        'strokeWidth': Number,
-        'eyeOffsetX': Number,
-        'eyeOffsetY': Number,
-        'eyeRadius': Number
+    <script setup>
+    defineProps({
+    x: {
+        type: Number,
+        required: true
     },
-    components: {
-        
+    y: {
+        type: Number,
+        required: true
+    },
+    r: {
+        type: Number,
+        required: true
+    },
+    strokeWidth: {
+        type: Number,
+        required: true
+    },
+    eyeOffsetX: {
+        type: Number,
+        required: true
+    },
+    eyeOffsetY: {
+        type: Number,
+        required: true
+    },
+    eyeRadius: {
+        type: Number,
+        required: true
     }
-    }
+    })
     </script>
 
 We gebruiken die properties ook op de gepaste manier in de html van onze Face-component:
@@ -575,7 +564,7 @@ We gebruiken die properties ook op de gepaste manier in de html van onze Face-co
         </g>
     </template>
 
-Let opnieuw op de `:`!
+Let op de `:` (de afgekorte variant van `v-bind:`)!
 
 Ten slotte geven we de correcte waardes door vanaf `App.vue`:
 
@@ -595,13 +584,13 @@ Ten slotte geven we de correcte waardes door vanaf `App.vue`:
     </div>
     </template>
 
-Hier gebruiken we opnieuw `v-bind` in de plaats van `:`. Denk eraan dat je die uitwisselbaar kan gebruiken, dus `:` was even goed.
+Hier gebruiken we opnieuw `v-bind` in de plaats van `:`, daar is geen specifieke reden voor. Denk eraan dat je die uitwisselbaar kan gebruiken, dus `:` was even goed.
 
-We kunnen nu gemakkelijker bijvoorbeeld 3 gezichten naast elkaar zetten. Probeer het eerst zo. Maak daarna gebruik van een `v-for`. De oplossing met `v-for` vind je hieronder, maar probeer eerst zelf.
+We kunnen nu gemakkelijker bijvoorbeeld 3 gezichten naast elkaar zetten. Probeer het eerst zo. Maak daarna gebruik van een `v-for`. De oplossing met `v-for` vind je hieronder, maar probeer het eerst zelf!
 
 
     <svg width=700 height=350>
-      <g v-for="n in 3" :key="n">
+      <g v-for="n in 3">
         <Face 
           v-bind:x="50 + (n-1) * 100"
           v-bind:y=150
