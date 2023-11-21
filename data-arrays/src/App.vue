@@ -1,47 +1,29 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <svg width=700 height=175>
+    <g transform="translate(0, 0)">
+      <rect width=20 height=100 fill=orange />
+      <text x="5" y="110" fill="orange" transform="rotate(50, 5, 110)">Pigs</text>
+    </g>
+    <g transform="translate(30, 70)">
+      <rect width=20 height=30 fill=orange />
+      <text x="5" y="40" fill="orange" transform="rotate(50, 5, 40)">Cats</text>
+    </g>
+    <g transform="translate(60, 40)">
+      <rect width=20 height=60 fill=tomato />
+      <text x="5" y="70" fill="tomato" transform="rotate(50, 5, 70)">Chickens</text>
+    </g>
+    <g transform="translate(90, 20)">
+      <rect width=20 height=80 x=0 fill=orange />
+      <text x="5" y="90" fill="orange" transform="rotate(50, 5, 90)">Dogs</text>
+    </g>
+  </svg>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
 </style>

@@ -4,56 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56d66d4d-9a82-4901-b8ab-7c1345e9f201" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/PXLDataVis.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataVis/.vite/deps_temp_a44283d9/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataVis/.vite/deps_temp_d89dae38/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/.vscode/extensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/src/assets/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/src/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/src/assets/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/src/components/Face.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/src/components/TheWelcome.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/src/components/WelcomeItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/src/components/icons/IconCommunity.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/src/components/icons/IconDocumentation.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/src/components/icons/IconEcosystem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/src/components/icons/IconSupport.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/src/components/icons/IconTooling.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/vite.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/.vscode/extensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/assets/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/assets/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/components/TheWelcome.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/components/WelcomeItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/components/icons/IconCommunity.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/components/icons/IconDocumentation.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/components/icons/IconEcosystem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/components/icons/IconSupport.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/components/icons/IconTooling.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/vite.config.js" afterDir="false" />
+    <list default="true" id="56d66d4d-9a82-4901-b8ab-7c1345e9f201" name="Changes" comment="begin data-arrays">
+      <change beforePath="$PROJECT_DIR$/data-arrays/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/data-arrays/node_modules/.vite/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-arrays/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/data-arrays/src/App.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,11 +94,24 @@
       <workItem from="1699979313183" duration="1191000" />
       <workItem from="1700484631058" duration="8000" />
       <workItem from="1700574069195" duration="20000" />
-      <workItem from="1700574541567" duration="2518000" />
+      <workItem from="1700574541567" duration="3173000" />
     </task>
+    <task id="LOCAL-00001" summary="begin data-arrays">
+      <option name="closed" value="true" />
+      <created>1700579118919</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700579118920</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="begin data-arrays" />
+    <option name="LAST_COMMIT_MESSAGE" value="begin data-arrays" />
   </component>
 </project>
