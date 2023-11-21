@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="56d66d4d-9a82-4901-b8ab-7c1345e9f201" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/PXLDataVis.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataVis/.vite/deps_temp_a44283d9/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataVis/.vite/deps_temp_d89dae38/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/.vscode/extensions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/src/assets/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/src/assets/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/src/assets/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/src/components/Face.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/src/components/TheWelcome.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/src/components/WelcomeItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/src/components/icons/IconCommunity.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/src/components/icons/IconDocumentation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/src/components/icons/IconEcosystem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/src/components/icons/IconSupport.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/src/components/icons/IconTooling.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/vite.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/.vscode/extensions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/assets/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/assets/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/assets/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/components/TheWelcome.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/components/WelcomeItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/components/icons/IconCommunity.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/components/icons/IconDocumentation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/components/icons/IconEcosystem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/components/icons/IconSupport.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/components/icons/IconTooling.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-arrays/data-arrays/vite.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Composition API Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2YAral5gzkIRBmqVxaESWTINhj2" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
+    ]
+  }
+}]]></component>
+  <component name="RunManager" selected="npm.dev (1)">
+    <configuration name="dev (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/Lab1/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/DataVis/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev (1)" />
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56d66d4d-9a82-4901-b8ab-7c1345e9f201" name="Changes" comment="" />
+      <created>1699979305563</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699979305563</updated>
+      <workItem from="1699979313183" duration="1191000" />
+      <workItem from="1700484631058" duration="8000" />
+      <workItem from="1700574069195" duration="20000" />
+      <workItem from="1700574541567" duration="2518000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
