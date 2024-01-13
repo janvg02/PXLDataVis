@@ -1,11 +1,3 @@
-<template>
-  <g :transform="`translate(${x}, ${y})`">
-    <circle :r="r" fill="yellow" stroke="black" :stroke-width="strokeWidth"></circle>
-    <circle :cx="-eyeOffsetX" :cy="-eyeOffsetY" :r="eyeRadius" fill="black"></circle>
-    <circle :cx="eyeOffsetX" :cy="-eyeOffsetY" :r="eyeRadius" fill="black"></circle>
-  </g>
-</template>
-
 <script setup>
 defineProps({
   x: {
@@ -38,3 +30,12 @@ defineProps({
   }
 })
 </script>
+
+<template>
+  <g :transform="`translate(${x}, ${y})`">
+    <circle :r=r fill=yellow stroke=black :stroke-width=strokeWidth>
+    </circle>
+    <circle :cx=-eyeOffsetX :cy=-eyeOffsetY :r=eyeRadius fill=black />
+    <circle :cx=eyeOffsetX :cy=-eyeOffsetY :r=eyeRadius fill=black />
+  </g>
+</template>

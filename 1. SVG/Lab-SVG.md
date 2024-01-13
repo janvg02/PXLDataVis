@@ -78,8 +78,8 @@ Als je nu je project opnieuw opstart krijg je enkel nog een witte pagina te zien
 
     <template>
     <main>
-    <h1>DataViz</h1>
-      <p>Ik vind Vue wel leuk, maar niet zo leuk als Blender.</p>
+    '<h1>DataViz</h1>
+      <p>Ik vin'd Vue wel leuk, maar niet zo leuk als Blender.</p>
     </main>
     </template>
 
