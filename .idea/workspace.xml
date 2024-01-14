@@ -5,33 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56d66d4d-9a82-4901-b8ab-7c1345e9f201" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data-arrays/src/components/Bar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-arrays/src/components/Bar2.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-arrays/src/components/Circle.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-processing/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-processing/.vscode/extensions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-processing/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-processing/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-processing/jsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-processing/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-processing/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-processing/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-processing/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-processing/src/assets/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-processing/src/assets/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-processing/src/assets/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-processing/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-processing/src/components/TheWelcome.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-processing/src/components/WelcomeItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-processing/src/components/icons/IconCommunity.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-processing/src/components/icons/IconDocumentation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-processing/src/components/icons/IconEcosystem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-processing/src/components/icons/IconSupport.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-processing/src/components/icons/IconTooling.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-processing/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-processing/vite.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Data Arrays/Oefeningen-DataArrays.md" beforeDir="false" afterPath="$PROJECT_DIR$/2. Data Arrays/Oefeningen-DataArrays.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-arrays/data-arrays/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/data-arrays/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-arrays/data-arrays/.vscode/extensions.json" beforeDir="false" afterPath="$PROJECT_DIR$/data-arrays/.vscode/extensions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-arrays/data-arrays/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/data-arrays/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-arrays/data-arrays/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/data-arrays/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-arrays/data-arrays/jsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/data-arrays/jsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-arrays/data-arrays/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/data-arrays/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-arrays/data-arrays/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/data-arrays/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-arrays/data-arrays/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/data-arrays/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-arrays/data-arrays/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/data-arrays/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-arrays/data-arrays/src/assets/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/data-arrays/src/assets/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-arrays/data-arrays/src/assets/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/data-arrays/src/assets/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-arrays/data-arrays/src/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/data-arrays/src/assets/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-arrays/data-arrays/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/data-arrays/src/components/HelloWorld.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-arrays/data-arrays/src/components/TheWelcome.vue" beforeDir="false" afterPath="$PROJECT_DIR$/data-arrays/src/components/TheWelcome.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-arrays/data-arrays/src/components/WelcomeItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/data-arrays/src/components/WelcomeItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-arrays/data-arrays/src/components/icons/IconCommunity.vue" beforeDir="false" afterPath="$PROJECT_DIR$/data-arrays/src/components/icons/IconCommunity.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-arrays/data-arrays/src/components/icons/IconDocumentation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/data-arrays/src/components/icons/IconDocumentation.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-arrays/data-arrays/src/components/icons/IconEcosystem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/data-arrays/src/components/icons/IconEcosystem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-arrays/data-arrays/src/components/icons/IconSupport.vue" beforeDir="false" afterPath="$PROJECT_DIR$/data-arrays/src/components/icons/IconSupport.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-arrays/data-arrays/src/components/icons/IconTooling.vue" beforeDir="false" afterPath="$PROJECT_DIR$/data-arrays/src/components/icons/IconTooling.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-arrays/data-arrays/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/data-arrays/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-arrays/data-arrays/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/data-arrays/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3. Data Processing/abonnees_genk.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data-processing/src/components/abonnees_genk.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3. Data Processing/harry_potter.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data-processing/src/components/harry_potter.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3. Data Processing/movies.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data-processing/src/components/movies.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,11 +86,14 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data-processing/src/components" />
+      <recent name="$PROJECT_DIR$/data-processing/src/assets" />
+      <recent name="$PROJECT_DIR$/data-processing/src" />
       <recent name="$PROJECT_DIR$/data-arrays" />
       <recent name="$PROJECT_DIR$/" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev (2)">
+  <component name="RunManager" selected="npm.dev (5)">
     <configuration name="dev (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/Lab1/package.json" />
       <command value="run" />
@@ -132,8 +134,8 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/DataVis/package.json" />
+    <configuration name="dev (5)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/data-processing/data-processing/package.json" />
       <command value="run" />
       <scripts>
         <script value="dev" />
@@ -144,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev (5)" />
         <item itemvalue="npm.dev (2)" />
         <item itemvalue="npm.dev (4)" />
         <item itemvalue="npm.dev (3)" />
         <item itemvalue="npm.dev (1)" />
-        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +173,7 @@
       <workItem from="1701077809734" duration="3106000" />
       <workItem from="1704914600842" duration="738000" />
       <workItem from="1704916244261" duration="10698000" />
-      <workItem from="1705145508938" duration="15421000" />
+      <workItem from="1705145508938" duration="22491000" />
     </task>
     <servers />
   </component>
