@@ -14,7 +14,13 @@ Voor deze oefeningen gebruiken we de volgende statische data:
 
 We gaan de grootte van de deze steden weergeven met cirkels. Maak een nieuwe Vue app en zorg dat je een cirkel weergeeft voor elke cirkel. De straal van de cirkel komt overeen met de `population`. Je zal wel een schaling (deling) moeten toepassen op die population. Bijvoorbeeld:
 
-<svg width="800" height="100" class="chart"><circle cx="50" cy="50" r="34.696" style="fill: rgb(170, 170, 170);"></circle><circle cx="150" cy="50" r="33.623999999999995" style="fill: rgb(170, 170, 170);"></circle><circle cx="250" cy="50" r="17.172" style="fill: rgb(170, 170, 170);"></circle><circle cx="350" cy="50" r="8.975999999999999" style="fill: rgb(170, 170, 170);"></circle><circle cx="450" cy="50" r="46.04" style="fill: rgb(170, 170, 170);"></circle></svg>
+<svg width="800" height="100" class="chart">
+<circle cx="50" cy="50" r="34.696" style="fill: rgb(170, 170, 170);"></circle>
+<circle cx="150" cy="50" r="33.623999999999995" style="fill: rgb(170, 170, 170);">
+</circle><circle cx="250" cy="50" r="17.172" style="fill: rgb(170, 170, 170);"></circle>
+<circle cx="350" cy="50" r="8.975999999999999" style="fill: rgb(170, 170, 170);"></circle>
+<circle cx="450" cy="50" r="46.04" style="fill: rgb(170, 170, 170);"></circle>
+</svg>
 
 Zorg dat je de cirkels van deze visualisatie ook in zijn eigen component steekt!
 
