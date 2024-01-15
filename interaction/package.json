@@ -1,0 +1,22 @@
+{
+  "name": "interaction",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mdi/font": "7.0.96",
+    "d3": "^7.8.5",
+    "roboto-fontface": "*",
+    "vue": "^3.2.0",
+    "vuetify": "^3.4.10"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "unplugin-fonts": "^1.0.3",
+    "vite": "^4.2.0",
+    "vite-plugin-vuetify": "^1.0.0"
+  }
+}
