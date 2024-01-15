@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="56d66d4d-9a82-4901-b8ab-7c1345e9f201" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-processing/data-processing/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/data-processing/data-processing/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data-processing/data-processing/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/data-processing/data-processing/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-processing/src/components/abonnees_genk.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data-processing/data-processing/public/abonnees_genk.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-processing/src/components/harry_potter.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data-processing/data-processing/public/harry_potter.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-processing/src/components/movies.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data-processing/data-processing/public/movies.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +150,7 @@
       <workItem from="1704914600842" duration="738000" />
       <workItem from="1704916244261" duration="10698000" />
       <workItem from="1705145508938" duration="22805000" />
-      <workItem from="1705257079990" duration="10074000" />
+      <workItem from="1705257079990" duration="24907000" />
     </task>
     <servers />
   </component>
