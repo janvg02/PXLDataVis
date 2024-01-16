@@ -61,7 +61,7 @@ We proberen al eens onze fertData te filteren in `mounted()`:
         const countries = [
         "Belgium",
         "China",
-        "Turkey",
+        "Turkiye",
         "Germany",
         "Finland",
         "Niger"

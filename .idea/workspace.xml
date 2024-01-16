@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56d66d4d-9a82-4901-b8ab-7c1345e9f201" name="Changes" comment="" />
+    <list default="true" id="56d66d4d-9a82-4901-b8ab-7c1345e9f201" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5. Integratie-oefening/Lab-Integratie-Oefening.md" beforeDir="false" afterPath="$PROJECT_DIR$/5. Integratie-oefening/Lab-Integratie-Oefening.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5. Integratie-oefening/fertility_rate.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Integratie-oefening/public/fertility_rate.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5. Integratie-oefening/population.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Integratie-oefening/public/population.csv" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,11 +64,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Integratie-oefening/public" />
+      <recent name="$PROJECT_DIR$/interactie/public" />
       <recent name="$PROJECT_DIR$/data-processing/data-processing/public" />
       <recent name="$PROJECT_DIR$/data-processing/data-processing/src" />
       <recent name="$PROJECT_DIR$/data-processing/data-processing" />
-      <recent name="$PROJECT_DIR$/data-processing/src/components" />
-      <recent name="$PROJECT_DIR$/data-processing/src/assets" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev (5)">
@@ -147,7 +152,7 @@
       <workItem from="1704914600842" duration="738000" />
       <workItem from="1704916244261" duration="10698000" />
       <workItem from="1705145508938" duration="22805000" />
-      <workItem from="1705257079990" duration="24907000" />
+      <workItem from="1705257079990" duration="54500000" />
     </task>
     <servers />
   </component>
